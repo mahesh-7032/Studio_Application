@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/boot.css' %}" />
+    
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    {% block title %}
+    <title>Hello, world!</title>
+    {% endblock %}
+
+</head>
+<body>
+ <div class="container-fluid">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark-000">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="{% static 'images/logo.jpg' %}"
+          alt=""
+          width="70"
+          height="50"
+          class="d-inline-block align-text-right"
+        />
+        INC STUDIOS
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link" href="{% url 'home' %}" >Home</a>
+          <a class="nav-link" href="{% url 'my_work' %}" >My Work</a>
+          <a class="nav-link" href="{% url 'photo_frames' %}" >Photo Frames</a>
+          <a class="nav-link" href="{% url 'packages' %}" >Package</a>
+          <a class="nav-link" href="{% url 'about' %}" >About</a>
+          <a class="nav-link" href="{% url 'contact_us' %}" >Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>    
+    {% block body_block %} 
+
+    {% endblock%} 
+    
+    <footer class="footer text-center p-5 mt-5">
+      <div class="footer-content">
+        <div class="social-icons">
+          <a
+            href="https://instagram.com/8818rajesh?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram mr-4" id="insta" aria-hidden="true"></i></a
+          ><a
+            href="https://wa.me/9949698825"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-whatsapp mr-4"></i></a
+          ><a
+            href="https://www.youtube.com/@creativestudiorajeshsrisha7510"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-youtube mr-4"></i></a
+          ><a href="mailto:your@email.com"><i class="far fa-envelope mr-4"></i></a>
+        </div>
+      </div>
+      <p id='oo'>© 2023 Your Studio Name. All Rights Reserved.</p>
+    </footer>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

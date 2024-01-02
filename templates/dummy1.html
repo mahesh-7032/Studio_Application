@@ -1,0 +1,37 @@
+{% extends "dummy.html" %}
+<head>
+  {% block title%}
+  <title>CONTACT US</title>
+  {% endblock %}
+</head>
+<body>
+  {% block body_block %}
+<body>
+    <div class=" ll container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-6">Login</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label om">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label om">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Sign-in</button>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+  {% endblock %}
+  

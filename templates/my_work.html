@@ -1,0 +1,13 @@
+ {% extends "dummy.html" %}
+ {% load static %}
+  {% block title%}
+  <title>MY WORK</title>
+  {% endblock %}
+  {% block body_block %}
+  <div class="card bg-dark text-white" style="margin-top: 40px;">
+    <img src="{% static 'images/one.jpeg' %}"class="card-img" alt="...">
+    <div class="card-img-overlay">
+    </div>
+  </div>
+  {% endblock %}
+  

@@ -1,0 +1,47 @@
+
+{% extends "dummy.html" %}
+{% load static %}
+  {% block title%}
+  <title>ABOUT</title>
+  {% endblock %}
+</head>
+  {% block body_block %}
+  <div class="container" style="margin-top: -100px;" >
+    <div class="row mt-5" style="padding-top: 70px;">
+    <div class="col-md-2 how-img">
+      <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" class="rounded-circle img-fluid size_picture" alt=""/>
+    </div>
+    <div class="col-md-10 mt-5">
+      <h4 style="color: yellow";>Incognito </h4>
+      <p>Hey There! Incognito here,I am a professional Photographer and Videographer over ten years of experience.I hope you have gone through my portfolio and hope you liked my work.Looking forward to hearing from you to capture your memories!😉😉</p>
+    </div>
+  </div>
+  <hr>
+  <hr>
+  <div class="card-group">
+    <div class="card">
+      <img src="{% static 'images/three.jpeg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cameras</h5>
+        <p class="card-text">
+          Cameras are indispensable tools capturing moments in time. Evolving from film to digital, they document life's stories with precision. Advancements continue to redefine photography, bridging creativity and technology seamlessly.</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'images/two.jpeg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Video Cameras</h5>
+        <p class="card-text">Videocameras revolutionize storytelling, capturing dynamic visuals with clarity. From personal vlogs to cinematic productions, these devices preserve and share experiences, offering a gateway to immersive narratives and visual communication.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'images/drone.jpeg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Drones</h5>
+        <p class="card-text">Drones with cameras redefine perspectives, soaring to capture breathtaking aerial footage. These versatile devices blend technology and photography, offering innovative angles for filmmaking, surveillance, and exploration, transforming the art of storytelling.</p>
+      </div>
+    </div>
+  </div>
+ 
+{% endblock%}

@@ -1,0 +1,410 @@
+body{
+    background-color: black;
+}
+.nav-link:hover{
+color: red !important;
+}
+.text{
+    color: white;
+}
+.o{
+    margin-top: 20px;
+    color : rgb(42, 225, 225); 
+}
+.on>p{
+    font-family: "lucida Handwriting",cursive;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}
+p{
+    color:white;
+}
+.custom-hr {
+    border-top: 1px solid white; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+.card-text{
+    color:black;
+}
+
+  .carousel{
+    margin-top: 50px;
+  }
+  .carousel-inners{
+    height: 100px;
+  }
+  .carousel-caption{
+    color: #fff;
+    top: 50%;
+  }  
+  .op{
+    margin-top: 10px;
+    color: #fff;
+  }
+  #yel{
+    color: yellow;
+  }
+  #oo{
+    margin-top: 10px;
+  }
+  .navbar{
+    position:sticky;
+    top:0;
+    z-index: 1000;
+  }
+  .ll{
+    background-color:white;
+    margin-top: 50px;
+    max-width: 600px;
+  }
+.om{
+    color:black;
+  }
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.contact-form {
+  width: 45%;
+}
+
+.contact-form h2 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white; 
+}
+
+
+button {
+  background-color: #1f7a8c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d6d7d;
+}
+
+.contact-info {
+  width: 45%;
+}
+
+.contact-info h2 {
+  color: #333;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-item i {
+  margin-right: 10px;
+  color: #1f7a8c;
+}
+
+.map-item {
+  margin-bottom: 0;
+}
+
+.map {
+  width: 100%;
+  height: 175px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.w{
+  color:white;
+}
+#ww{
+  color: yellow;
+}
+.vertical-line {
+  border-left: 1px solid #fff; /* Adjust the width and color as needed */
+  height: 700px; /* Adjust the height as needed */
+}
+.size_picture {
+  max-width:100%;
+  border: 1px solid white;
+}
+/* ----------- */
+/* Styles for the main container */
+.bg-black {
+  background-color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+/* Styles for the inner container */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Styles for the individual frames */
+.max-w-md {
+  max-width: 28rem; /* Adjust the max-width as needed */
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+/* Styles for the image */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Styles for the text */
+.zx {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.xz {
+  font-size: 0.875rem;
+}
+
+/* Additional styles for consistency */
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+/* ------  */
+.zzz {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Styles for the individual frames */
+.xxx {
+  display: flex;
+  flex-direction: column;
+}
+
+.ccc {
+  margin-bottom: 3rem;
+}
+
+/* Styles for the image */
+
+.vvv,.bbb {
+  object-fit: cover;
+  width: 300px; /* Adjust the width as needed */
+  height: 100%; /* Ensure images take full height of their containers */
+}
+
+/* Styles for the text */
+.nnn {
+  margin-top: 1rem;
+  overflow: auto; 
+  max-width: 80%;
+}
+
+.mmm {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.aaa {
+  font-size: 0.875rem;
+}
+
+/* Styles for the large image */
+.bbb {
+  height: 600px;
+  width: 600px;
+}
+
+/* Additional styles for consistency */
+.mt-2 {
+  margin-top: 0.5rem;
+}
+/* ----------- -------------------------------------------------*/
+/* Styles for the main container */
+.unique-bg-black {
+  background-color: #000;
+}
+
+.unique-text-white {
+  color: #fff;
+}
+
+.unique-py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Styles for the headings */
+.unique-text-center {
+  text-align: center;
+}
+
+.unique-text-4xl {
+  font-size: 2.25rem;
+}
+
+.unique-font-bold {
+  font-weight: bold;
+}
+
+.unique-text-2xl {
+  font-size: 1.5rem;
+}
+
+.unique-font-semibold {
+  font-weight: 600;
+}
+
+.unique-mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.unique-mb-16 {
+  margin-bottom: 4rem;
+}
+
+/* Styles for the grid */
+.unique-flex {
+  display: flex;
+}
+
+.unique-justify-center {
+  justify-content: center;
+}
+
+.unique-space-x-8 > * + * {
+  margin-left: 2rem;
+}
+
+/* Styles for the package */
+.unique-package {
+  background-color: #333;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Styles for the badge */
+.unique-recommended-badge,
+.unique-popular-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 0 0 0.375rem 0.375rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.unique-recommended-badge {
+  background-color: #f8d721;
+  color: #000;
+}
+
+.unique-popular-badge {
+  background-color: #e53e3e;
+  color: #fff;
+}
+
+/* Styles for the package image */
+.unique-package-image {
+  aspect-ratio: 300/200;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Styles for the package details */
+.unique-p-4 {
+  padding: 1rem;
+  max-width: 400px;
+}
+
+.unique-text-xl {
+  font-size: 1.25rem;
+}
+
+.unique-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Styles for the package price */
+.unique-text-2xl {
+  font-size: 1.5rem;
+}
+
+.unique-text-bold {
+  font-weight: bold;
+}
+
+/* Additional styles for consistency */
+.unique-mt-2 {
+  margin-top: 0.5rem;
+}

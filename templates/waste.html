@@ -1,0 +1,105 @@
+value="{{ form.preferredDate.value }}"
+<form method="post" action="{% url 'contact_us' %}">
+    {% csrf_token %}
+    
+    {{ form.as_p }}
+    
+    <button type="submit">Submit</button>
+  </form>
+
+
+
+  <div class="contact-us">
+    <div class="contact-form ">
+      <h2 id='ww'>Contact Form </h2>
+      <hr></hr>
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name" class="w">Name:</label
+          ><input type="text" id="name" name="name" required="" value="{{ form.name.value }}" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="w">Email:</label
+          ><input type="email" id="email" name="email" required="" value="{{ form.email.value }}"/>
+        </div>
+        <div class="form-group">
+          <label for="contactNo"class="w">Contact No:</label
+          ><input
+            type="tel"
+            id="contactNo"
+            name="contactNo"
+            required=""
+            value="{{ form.contactNo.value }}"
+          />
+        </div>
+        <div class="form-group">
+          <label for="shootLocation"class="w">Shoot Location:</label
+          ><input
+            type="text"
+            id="shootLocation"
+            name="shootLocation"
+            required=""
+            value="{{ form.shootLocation.value }}"
+          />
+        </div>
+        <div class="form-group">
+          <label for="preferredDate"class="w">Preferred Shoot Date:</label
+          ><input
+            type="date"
+            id="preferredDate"
+            name="preferredDate"
+            required=""
+            value="{{ form.preferredDate.value }}"
+          />
+        </div>
+        <div class="form-group">
+          <label for="additionalRequirements"class="w">Additional Requirements:</label
+          ><textarea
+            id="additionalRequirements"
+            name="additionalRequirements"
+            required=""
+          ></textarea>
+        </div>
+        <button type="submit">Enquire</button>
+      </form>
+      {{ form.as_p }}
+      <div>
+      </div>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="contact-info ">
+      <h2 id="ww">Contact Info</h2>
+      <hr></hr>
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <p>+91-911031xxxx</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <p>sample123@gmail.com</p>
+      </div>
+      <div class="info-item map-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="map">
+          <iframe
+            title="Google Map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d573.7301172289798!2d77.58721469769594!3d14.67981523479853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1701936802876!5m2!1sen!2sin"
+            width="275"
+            height="175"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  ------------------
+  class contact_us(FormView):
+    template_name = 'contact_us.html'
+    form_class=RegistrationForm
+
+    def  form_valid(self, form):
+        form.save()
+        return HttpResponse('wow')
+  

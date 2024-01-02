@@ -1,0 +1,73 @@
+{ {% extends "dummy.html" %}}
+{% load static %}
+ {% block title%}
+<title>PHOTO FRAMES</title>
+{% endblock %} {%block body_block %}
+
+  <div class="custom-container zzz">
+    <div class="frame-container xxx">
+      <div class="frame ccc">
+        <img src="{% static 'images/f2.jpeg' %}"alt="Frame 1" class="frame-image vvv" />
+        <div class="frame-details nnn">
+          <h2 class="frame-title mmm">Frame 1</h2>
+          <p class="frame-description aaa">
+            The word nature is borrowed from the Old French nature and is
+            derived from the Latin word natura, or "essential qualities, innate
+            disposition", and in ancient times, literally meant "birth".
+          </p>
+        </div>
+      </div>
+      <div class="frame ccc">
+        <img src="{% static 'images/f4.jpeg' %}"alt="Frame 2" class="frame-image vvv" />
+        <div class="frame-details nnn">
+          <h2 class="frame-title mmm">Frame 2</h2>
+          <p class="frame-description aaa">
+            The word nature is borrowed from the Old French nature and is
+            derived from the Latin word natura, or "essential qualities, innate
+            disposition", and in ancient times, literally meant "birth".
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="large-image-container">
+      <img src="{% static 'images/fm.jpeg' %}"alt="Large Image" class="large-image bbb" />
+    </div>
+  </div>
+  {% comment %} -------- {% endcomment %}
+  <div class="bg-black text-white">
+    <div class="flex justify-between items-center px-10 py-8">
+      <div class="flex flex-col items-start max-w-md">
+        <img
+          src="{% static 'images/f1.jpeg' %}"
+          alt="Frame 1"
+          class="mb-4"
+          width="300"
+          height="300"
+          style="aspect-ratio: 300 / 300; object-fit: cover"
+        />
+        <h2 class="text-xl font-bold mb-2">Frame 3</h2>
+        <p class="text-sm">
+          The word nature is borrowed from the Old French nature and is derived
+          from the Latin word natura, or "essential qualities, innate
+          disposition", and in ancient times, literally meant "birth".
+        </p>
+      </div>
+      <div class="flex flex-col items-end max-w-md">
+        <img
+          src="{% static 'images/f3.jpeg' %}"
+          alt="Frame 2"
+          class="mb-4"
+          width="300"
+          height="300"
+          style="aspect-ratio: 300 / 300; object-fit: cover"
+        />
+        <h2 class="text-xl font-bold mb-2">Frame 4</h2>
+        <p class="text-sm">
+          The word nature is borrowed from the Old French nature and is derived
+          from the Latin word natura, or "essential qualities, innate
+          disposition", and in ancient times, literally meant "birth".
+        </p>
+      </div>
+    </div>
+  {% endblock %}
+
